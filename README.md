@@ -87,6 +87,11 @@ queries.sql
 - Twitter: [@soza_edgard](https://twitter.com/soza_edgard)
 - LinkedIn: [Edgard Soza Sobalvarro](https://www.linkedin.com/in/edgard-soza-sobalvarro/)
 
+👤 Santiago Pons Lezica
+
+- GitHub: [@sntgopl](https://github.com/sntgopl)
+- LinkedIn: [Santiago Pons Lezica](https://www.linkedin.com/in/spons-lezica7/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
