@@ -27,3 +27,8 @@ CREATE TABLE vets (id SERIAL PRIMARY KEY, name VARCHAR(50), age INTEGER, date_of
 
 CREATE TABLE specializations (vet_id INTEGER REFERENCES vets(id), species_id INTEGER REFERENCES species(id), PRIMARY KEY (vet_id, species_id));
 CREATE TABLE visits (id SERIAL PRIMARY KEY, animal_id INTEGER, vet_id INTEGER, visit_date DATE, FOREIGN KEY (animal_id) REFERENCES animals(id), FOREIGN KEY (vet_id) REFERENCES vets(id));
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+CREATE INDEX visits_animal_desc ON visits(animal_id DESC);
+CREATE INDEX owners_email_desc ON owners(email DESC);
+CREATE INDEX visits_vet_id ON visits(vet_id DESC);
