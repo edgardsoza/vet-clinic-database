@@ -24,7 +24,7 @@ CREATE TABLE invoices (
 CREATE INDEX idx_invoices_medical_history_id ON invoices (medical_history_id);
 
 CREATE TABLE treatments (
-    id INT PRIMARY KEY REFERENCES medical_histories(id),
+    id SERIAL PRIMARY KEY,
     type VARCHAR(50) NOT NULL,
     name VARCHAR(50) NOT NULL
 );
