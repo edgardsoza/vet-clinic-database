@@ -41,8 +41,8 @@ CREATE TABLE invoice_items (
 CREATE INDEX idx_invoice_items_invoice_id ON invoice_items (invoice_id);
 CREATE INDEX idx_invoice_items_treatment_id ON invoice_items (treatment_id);
 
-CREATE TABLE invoice_treatments (
-    invoice_id INT REFERENCES invoices(id),
+CREATE TABLE medical_histories_treatments (
+    medical_histories_id INT REFERENCES medical_histories(id),
     treatment_id INT REFERENCES treatments(id),
-    PRIMARY KEY (invoice_id, treatment_id)
+    PRIMARY KEY (medical_histories_id, treatment_id)
 );
